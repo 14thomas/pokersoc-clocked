@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.png" type="image/png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/Campton-Medium.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="fonts/Campton-Bold.otf" as="font" type="font/otf" crossorigin>
 <style>
@@ -78,6 +78,16 @@
   .app[data-state="paused"] .digits { color: var(--yellow); text-shadow: 0 0 0.075em rgba(229, 226, 159, 0.35); }
   .app.warn:not(.flash) .digits { opacity: 0.35; }   /* last 5 s: pulses once a second */
 
+  /* ---- logo (top-left corner) ---- */
+  .logo {
+    position: fixed;
+    top: max(18px, env(safe-area-inset-top));
+    left: max(30px, env(safe-area-inset-left));
+    height: 44px; width: auto;
+    opacity: 0.85;
+    pointer-events: none;
+  }
+
   /* ---- reset ---- */
   .reset {
     -webkit-appearance: none; appearance: none;
@@ -119,6 +129,7 @@
 </style>
 </head>
 <body>
+<img class="logo" src="logo.png" alt="PokerSoc" width="29" height="44">
 <main class="app" id="app" data-state="idle">
   <section class="clock" id="clock" aria-label="Shot clock. Tap to pause or resume.">
     <div class="digits" id="digits" role="timer">30</div>

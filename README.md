@@ -17,7 +17,7 @@ A 30-second poker shot clock for the iPhone, in landscape. Installs from GitHub 
 3. On the iPhone, open the Pages URL in Safari → Share → Add to Home Screen.
 4. Turn off Portrait Orientation Lock (Control Centre) so it can rotate.
 
-Replace `icon.png` with the PokerSoc icon (square PNG, 512×512, no transparency) *before* adding it to the Home Screen. iOS keeps the icon it saw when you added it.
+The icon is the PokerSoc logo (white on navy). If you change it, replace `apple-touch-icon.png` (180×180), `icon-192.png` and `icon.png` (512×512) — square, no transparency — *before* adding to the Home Screen. iOS keeps the icon it saw when you added it, so delete and re-add the app to pick up a new one.
 
 ## Notes
 

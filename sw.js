@@ -1,11 +1,14 @@
 // Caches the app so it opens with no signal. Serves from cache, refreshes in the background,
 // so an update you push shows up the launch after next. Bump CACHE to force a clean refresh.
-const CACHE = 'shot-clock-v2';
+const CACHE = 'shot-clock-v4';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icon.png',
+  './icon-192.png',
+  './logo.png',
+  './apple-touch-icon.png',
   './fonts/Campton-Medium.otf',
   './fonts/Campton-Bold.otf',
 ];
