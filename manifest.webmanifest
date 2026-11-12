@@ -1,0 +1,14 @@
+{
+  "name": "PokerSoc Shot Clock",
+  "short_name": "Shot Clock",
+  "description": "30-second poker shot clock",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#071120",
+  "theme_color": "#071120",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
